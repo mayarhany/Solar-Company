@@ -1,0 +1,193 @@
+/* x large */
+@media (max-width: 1200px){
+    .main-heading{
+        font-size: 35px;
+    }
+    .text h3{
+        font-size: 35px;
+    }
+    .text p{
+        font-size: 16px;
+    }
+
+
+    /* ^ navbar */
+    nav .nav-links{
+        gap: 5px;
+    }
+    nav .nav-links a{
+        padding-inline: 15px;
+    }
+
+    /* ^ About Section */
+    .about .about-img img{
+        width: 350px;
+    }
+    .about .about-img div{
+        display: none;
+    }
+
+    /* ? Products Section */
+    .products .heading h2{
+        font-size: 35px;
+    }
+
+    /* ^ Values Section */
+    .values .values-heading h2{
+        font-size: 35px;
+    }
+
+    /* ^ Footer */
+    footer ul{
+        gap: 20px;
+    }
+}
+
+
+/* large */
+@media (max-width: 992px){
+    /* & container */
+    .container{
+        padding-inline: 100px;
+    }
+
+    /* ? Navbar */
+    nav{
+        position: relative;
+    }
+    nav .nav-links{
+        position: absolute;
+        right: 100px;
+        top: 60px;
+        flex-direction: column;
+        background-color: #3cab8fc5;
+        border-radius: 5px;
+        padding-inline: 25px;
+        display: none;
+    }
+    /* it is for the top arrow when mouse hover */
+    nav .nav-links::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -25px;
+        border-color: transparent transparent #3CAB90c5 transparent;
+        border-style: solid;
+        border-width: 15px;
+    }
+    nav .icon{
+        display: block;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    nav .icon:hover ~ .nav-links{
+        display: block;
+    }
+    nav .contact{
+        display: none;
+    }
+
+    /* ^ Header Section */
+    header .text h1{
+        font-size: 40px;
+    }
+
+    /* ^ About Section */
+    .about .about-text ul li{
+        font-size: 16px;
+    }
+    .about .about-img img{
+        width: 300px;
+    }
+
+    /* ~ Solar-kits Section */
+    .solar-kits .cards{
+        gap: 25px;
+    }
+    
+    /* ? Products Section */
+    .products .container{
+        flex-direction: column;
+    }
+
+    /* ^ Values Section */
+    .values .cards{
+        flex-direction: column;
+    }
+
+    /* ~ Feedback Section */
+    .feedback .container{
+        flex-direction: column;
+    }
+
+    /* ? Footer */
+    footer .img{
+        margin: auto;
+    }
+    footer .top,
+    footer .bottom{
+        flex-direction: column;
+    }
+    footer .top form p{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+}
+
+/* medium */
+@media (max-width: 768px) {
+    /* ! Container */
+    .container{
+        padding-inline: 50px;
+    }   
+
+    /* ? Navbar */
+    nav .nav-links{
+        right: 50px;
+    }
+
+    /* ^ Header Section */
+    header .bar{
+        gap: 15px;
+    }
+    header .header-buttons{
+        gap: 15px;
+    }
+
+    /* ^ About Section */
+    .about .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solar-kits .cards{
+        flex-wrap: wrap;
+    }
+
+    /* ? Products Section */
+    .products .cards{
+        flex-direction: column;
+    }
+
+    
+}
+
+
+/* small */
+@media (max-width: 576px){
+    /* ! Container */
+    .container{
+        padding-inline: 20px;
+    }
+
+    /* ! Button */
+    .btn{
+        padding-inline: 25px;
+    }
+
+    /* ?Navbar */
+    nav .nav-links{
+        right: 20px;
+    }
+}
